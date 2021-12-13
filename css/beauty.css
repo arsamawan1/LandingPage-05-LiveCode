@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f4f4f4;
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Raleway";
+}
+.navbar {
+  background: #f97300;
+}
+.nav-link,
+.navbar-brand {
+  color: #f4f4f4;
+  cursor: pointer;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  background: #f4f4f4;
+  color: #f97300;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+.navbar-toggler {
+  background: #fff !important;
+}
+
+/*header style*/
+.header {
+  position: relative;
+  background-image: url("../images/headerback.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  height: 500px;
+  min-width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)),
+    url("../image/computer.jpg");
+  background-size: cover;
+}
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2em;
+}
+.description h1 {
+  color: #f97300;
+}
+.description p {
+  color: #666;
+  font-size: 20px;
+  width: 50%;
+  line-height: 1.5;
+}
+.description button {
+  border: 1px solid #f97300;
+  background: #f97300;
+  color: #fff;
+}
+.about {
+  margin: 4em 0;
+  padding: 1em;
+  position: relative;
+}
+.about h1 {
+  color: #f97300;
+  margin: 2em;
+}
+.about img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.about span {
+  display: block;
+  color: #888;
+  position: absolute;
+  left: 115px;
+}
+.about .desc {
+  padding: 2em;
+  border-left: 4px solid #10828c;
+}
+.about .desc h3 {
+  color: #10828c;
+}
+.about .desc p {
+  line-height: 2;
+  color: #888;
+}
+
+/*Portfolio*/
+.features {
+  margin: 4em 0;
+  position: relative;
+}
+.features h1 {
+  color: #f97300;
+  margin: 2em;
+}
+.features img {
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+}
+
+/*blog style*/
+
+.blog {
+  margin: 4em 0;
+  position: relative;
+}
+.blog h1 {
+  color: #f97300;
+  margin: 2em;
+}
+.blog .card {
+  box-shadow: 0 0 20px #ccc;
+}
+.blog .card img {
+  width: 100%;
+  height: 12em;
+}
+/* @media and (max-width: 1100px){
+ .team .item img{
+ 	width: 100%;
+ }	
+} */
+.blog .card-title {
+  color: #f97300;
+}
+.blog .card-body {
+  padding: 1em;
+}
+.team {
+  margin: 4em 0;
+  position: relative;
+}
+.team h1 {
+  color: #f97300;
+  margin: 2em;
+}
+.team .item {
+  position: relative;
+  overflow: hidden;
+}
+.team .des {
+  background: #f97300;
+  color: #fff;
+  text-align: center;
+  border-top-right-radius: 93%;
+  transition: 0.3s ease-in-out;
+  position: absolute;
+  width: 88%;
+  bottom: 24px;
+}
+.team .item:hover .des {
+  height: 100%;
+  background: #f973007d;
+  position: absolute;
+  width: 89%;
+  padding: 5em;
+  top: 0;
+  border-top-right-radius: 0;
+}
+.contact-form {
+  margin: 6em 0;
+  position: relative;
+}
+
+.contact-form h1 {
+  padding: 2em 1px;
+  color: #f97300;
+}
+.contact-form .right {
+  max-width: 600px;
+}
+.contact-form .right .btn-secondary {
+  background: #f97300;
+  color: #fff;
+  border: 0;
+}
+.contact-form .right .form-control::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+.context-dark,
+.bg-gray-dark,
+.bg-primary {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a,
+.footer-classic a:focus,
+.footer-classic a:active {
+  color: #ffffff;
+}
+.nav-list li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+  margin-left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 23px;
+  font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+  content: "\f14f";
+  font: 400 21px/1 "Material Design Icons";
+  color: #4d6de6;
+  display: inline-block;
+  vertical-align: baseline;
+  margin-left: -28px;
+  margin-right: 7px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.22s ease;
+}
+
+.box {
+  width: 100%;
+  padding: auto;
+}
+#res {
+  width: 50%;
+  margin: auto;
+}
+.faq-s {
+  padding-top: 10px;
+}
+
+#contact,
+#solution,
+#resources,
+#team,
+#faq {
+  padding: 50px;
+}
+.color {
+  background-color: black;
+}
